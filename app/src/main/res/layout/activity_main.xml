@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/backgroundImageView"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ts4"/>
+
+    <TextView
+        android:layout_alignTop="@id/backgroundImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taylor Swift"
+        android:id="@+id/textView"
+        android:textSize="50sp"
+        android:layout_margin="10dp"
+        android:shadowColor="#000000"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        android:shadowDx="2"
+        android:textColor="#FFF"
+        android:layout_below="@+id/textView"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_alignBottom="@id/backgroundImageView"
+        android:layout_height="wrap_content">
+
+        <Button android:layout_height="wrap_content"
+            android:id="@+id/newsButton"
+            android:textColor="#FFF"
+            android:text="Latest News"
+            android:background="@color/hot_pink"
+            android:layout_weight="1"
+            android:layout_width="0dp"/>
+
+        <Button android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/newsButton"
+            android:id="@+id/tourButton"
+            android:textColor="#FFF"
+            android:text="Tour Map"
+            android:layout_weight="1"
+            android:background="@color/hot_pink"
+            android:layout_width="0dp"/>
+        </LinearLayout>
+
+
+</RelativeLayout>
